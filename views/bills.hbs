@@ -1,0 +1,17 @@
+<h1>My Bills</h1>
+
+{{#each bills}}
+<div class="billWrap">
+    <div>
+        Bill name: {{remark}}<br>
+        Total: {{total}}<br>
+        I have paid {{user}}
+    </div>
+    <div>
+        Shared with:<br>
+        {{#each people}}
+        {{userName}}<br>
+        {{/each}}
+    </div>
+</div>
+{{/each}}

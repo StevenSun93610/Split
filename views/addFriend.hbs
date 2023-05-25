@@ -1,0 +1,10 @@
+{{#if message}}
+<div class="error">{{ message }}</div>
+{{/if}}
+<form method="POST" action="addFriend">
+	<div>
+		<label for="name">Friend Name:</label>
+		<input id="addFriendForm" type="text" name="name" value="">
+	</div>
+	<div><input id="addFriendBtn" type="submit" value="Add Friend"></div>
+</form>

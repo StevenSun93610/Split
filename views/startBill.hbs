@@ -1,0 +1,54 @@
+<h1 class="userName">Hello {{userName}}</h1>
+
+
+<div class="startBillRoot">
+	<div>
+		<label for="remark">Bill Name: </label>
+		<input type="text" class="remark" name="remark" id="remark" value="">
+	</div>
+	<div>
+		<label>Did you pay?: </label>
+		<select class="payOrNot" id="payOrNot">
+			<option value="">Select</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</select>
+	</div>
+
+	<div class="selectedYes hidden">
+		<div>
+			<label>How much did you pay: </label>
+			<input type="number" name="total" id="total" value="">
+		</div>
+		<div><label>Who else are sharing the bill?:</label></div>
+		<div class="selectFriendDiv">
+			<select class="selectFriend">
+				<option>Select Friend</option>
+				{{#each friends}}
+				<option value={{friendName}}>{{friendName}}</option>
+				{{/each}}
+			</select>
+		</div>
+
+		<button class="addFriend">Add a Friend</button>
+		<button class="submitBillPaid" id="submitBillPaid">Finish Bill</button> 
+	</div>
+
+	<div class="selectedNo hidden">
+		<div>
+			<select>
+				{{#each friends}}
+				<option value={{friendName}}>{{friendName}}</option>
+				{{/each}}
+			</select>
+			<label>pays: </label>
+			<input type="number" name="total" value="">
+		</div>
+		<div>
+			<label>How people sharing the bill, everyone, including you and the one pays for it: </label>
+			<input type="number" name="numOfPeople" value="">
+		</div>
+		<button class="submitBillNotPaid">Finish Bill</button>
+	</div>
+
+</div>

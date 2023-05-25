@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.2.3",
+    "chromedriver": "^108.0.0",
+    "eslint": "^8.28.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "http": "^0.0.1-security",
+    "mongoose": "^6.7.0",
+    "mongoose-slug-plugin": "^2.1.0",
+    "nodemon": "^2.0.20",
+    "selenium-webdriver": "^4.7.0",
+    "socket.io": "^4.5.3"
+  },
+  "name": "final-project-stevensun93610",
+  "description": "## Overview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-StevenSun93610.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-StevenSun93610/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-StevenSun93610#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint-plugin-mocha": "^10.1.0",
+    "mocha": "^10.1.0"
+  }
+}
